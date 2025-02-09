@@ -4,14 +4,20 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.mjs",
-    "dev": "nodemon --experimental-modules index.mjs"
+    "dev": "nodemon --experimental-modules index.mjs",
+    "tw": "node tw.mjs",
+    "gpt": "node gpt.mjs"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
-    "mongodb": "^4.13.0"
+    "http-proxy-middleware": "^3.0.3",
+    "https-proxy-agent": "^7.0.6",
+    "mongodb": "^4.13.0",
+    "openai": "^4.79.1",
+    "twitter-api-v2": "^1.19.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
